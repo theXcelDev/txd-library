@@ -1,7 +1,7 @@
-import Card from '../components/Card';
 import Container from '../components/Container';
 import Header from '../components/Header';
 import { collectionItems } from '../mocks';
+import GridCard from './_components/collection/GridCard';
 
 export default function Collection() {
   return (
@@ -9,11 +9,7 @@ export default function Collection() {
       <Header text="Acervo" />
       <div className="grid grid-cols-3 gap-4">
         {collectionItems.map((item) => (
-          <Card key={item.id}>
-            <p>
-              {item.name} - {item.author.fullName}
-            </p>
-          </Card>
+          <GridCard key={item.id} item={item} />
         ))}
       </div>
     </Container>

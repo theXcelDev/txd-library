@@ -19,6 +19,7 @@ export type Booking = {
 export type CollectionItem = {
   id: string;
   name: string;
+  description: string;
   author: Author;
 };
 
