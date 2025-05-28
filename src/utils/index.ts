@@ -5,6 +5,10 @@ export const capitalize = (value: string) => {
   return value.charAt(0).toUpperCase() + value.slice(1);
 };
 
+export const formatDate = (date: Date) => {
+  return format(date, 'dd/MM/yyyy', { locale: ptBR });
+};
+
 export const formatNumber = (value: number) => {
   return value.toLocaleString('pt-BR', {
     minimumIntegerDigits: 2,
