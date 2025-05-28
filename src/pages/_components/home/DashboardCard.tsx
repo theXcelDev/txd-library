@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import Card from '../../components/Card';
-import type { Booking, Loan } from '../../types';
+import Card from '../../../components/Card';
+import type { Booking, Loan } from '../../../types';
 import {
   capitalize,
   formatNumber,
@@ -9,7 +9,7 @@ import {
   getMinutes,
   getMonth,
   getYear
-} from '../../utils';
+} from '../../../utils';
 
 type CardType = 'loan' | 'booking';
 
@@ -19,7 +19,7 @@ type Props = {
   bookings?: Booking[];
 };
 
-export default function HomeDashboardCard({ type, loans, bookings }: Props) {
+export default function DashboardCard({ type, loans, bookings }: Props) {
   const title = type === 'loan' ? 'Empréstimos' : 'Agendamentos';
 
   const getRecentInfoPanel = (
