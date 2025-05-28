@@ -10,7 +10,7 @@ export default function GridCard({ item }: Props) {
   const { description } = item;
   const maxLengthForDescription = 200;
   return (
-    <Card key={item.id}>
+    <Card>
       <div className="flex flex-col justify-between gap-4 h-full">
         <div>
           <p className="text-sm font-light text-gray-500">

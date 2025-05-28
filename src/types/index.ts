@@ -20,6 +20,7 @@ export type CollectionItem = {
   id: string;
   name: string;
   description: string;
+  preview: string;
   author: Author;
 };
 

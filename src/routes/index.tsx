@@ -1,6 +1,7 @@
 import { createBrowserRouter } from 'react-router-dom';
 import MainLayout from '../layouts';
 import Collection from '../pages/Collection';
+import CollectionItem from '../pages/CollectionItem';
 import Home from '../pages/Home';
 
 export const MainRouter = createBrowserRouter([
@@ -15,6 +16,10 @@ export const MainRouter = createBrowserRouter([
       {
         path: 'collection',
         element: <Collection />
+      },
+      {
+        path: 'collection/:id',
+        element: <CollectionItem />
       },
       {
         path: 'authors',
