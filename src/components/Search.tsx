@@ -1,11 +1,12 @@
 import { useState } from 'react';
-import Button from '../../../components/Button';
+import Button from './Button';
 
 type Props = {
+  placeholder?: string;
   onSearch: (_: string) => void;
 };
 
-export default function Search({ onSearch }: Props) {
+export default function Search({ placeholder, onSearch }: Props) {
   const [search, setSearch] = useState('');
 
   return (
@@ -13,7 +14,7 @@ export default function Search({ onSearch }: Props) {
       <input
         type="text"
         name="search"
-        placeholder="Pesquise por nome de obra, autor, sinopse, etc."
+        placeholder={placeholder}
         value={search}
         onChange={(e) => setSearch(e.target.value)}
         className="bg-white py-2 px-4 rounded-md w-2/3"

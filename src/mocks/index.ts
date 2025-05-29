@@ -15,13 +15,15 @@ export const authors: Author[] = [
     id: 'g7sd-08fy-7gs0d7-fygs-7d',
     firstName: 'Dan',
     lastName: 'Brown',
-    fullName: 'Dan Brown'
+    fullName: 'Dan Brown',
+    bio: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore debitis cum quibusdam sunt suscipit. Labore doloribus accusamus eveniet veritatis, incidunt optio illum exercitationem eaque. Excepturi labore, temporibus vel incidunt cupiditate minus enim illum optio officia harum, itaque rerum saepe alias, velit reprehenderit minima. Accusantium, doloribus unde eaque, ex veniam minus optio facere ab id esse vero suscipit eveniet iure sunt omnis officiis at quisquam provident explicabo minima? Temporibus nihil ut perspiciatis quam deserunt, laboriosam, quas commodi, animi in earum culpa totam. Eaque velit placeat enim quis, animi libero ab quo officiis praesentium magni fugit veritatis accusamus. Debitis cumque ipsam totam.'
   },
   {
     id: 'g7sd-08fy-7gs0d8-fygs-7d',
     firstName: 'Oliver',
     lastName: 'Bowden',
-    fullName: 'Oliver Bowden'
+    fullName: 'Oliver Bowden',
+    bio: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore debitis cum quibusdam sunt suscipit. Labore doloribus accusamus eveniet veritatis, incidunt optio illum exercitationem eaque. Excepturi labore, temporibus vel incidunt cupiditate minus enim illum optio officia harum, itaque rerum saepe alias, velit reprehenderit minima. Accusantium, doloribus unde eaque, ex veniam minus optio facere ab id esse vero suscipit eveniet iure sunt omnis officiis at quisquam provident explicabo minima? Temporibus nihil ut perspiciatis quam deserunt, laboriosam, quas commodi, animi in earum culpa totam. Eaque velit placeat enim quis, animi libero ab quo officiis praesentium magni fugit veritatis accusamus. Debitis cumque ipsam totam.'
   }
 ];
 

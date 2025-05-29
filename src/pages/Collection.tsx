@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import Container from '../components/Container';
 import Header from '../components/Header';
+import Search from '../components/Search';
 import { collectionItems } from '../mocks';
 import Grid from './_components/collection/Grid';
-import Search from './_components/collection/Search';
 
 export default function Collection() {
   const [items, setItems] = useState(collectionItems);
@@ -52,7 +52,10 @@ export default function Collection() {
   return (
     <Container>
       <Header text="Acervo" />
-      <Search onSearch={handleSearch} />
+      <Search
+        placeholder="Pesquise por nome de obra, autor, sinopse, etc."
+        onSearch={handleSearch}
+      />
       <Grid collectionItems={items} />
     </Container>
   );

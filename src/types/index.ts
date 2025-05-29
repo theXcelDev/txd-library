@@ -4,6 +4,7 @@ export type Author = {
   lastName?: string;
   fullName?: string;
   nickname?: string;
+  bio?: string;
 };
 
 export type Booking = {
