@@ -1,5 +1,6 @@
 import { createBrowserRouter } from 'react-router-dom';
 import MainLayout from '../layouts';
+import AuthorDetails from '../pages/AuthorDetails';
 import Authors from '../pages/Authors';
 import Collection from '../pages/Collection';
 import CollectionItem from '../pages/CollectionItem';
@@ -25,6 +26,10 @@ export const MainRouter = createBrowserRouter([
       {
         path: 'authors',
         element: <Authors />
+      },
+      {
+        path: 'authors/:id',
+        element: <AuthorDetails />
       },
       {
         path: 'bookings',
