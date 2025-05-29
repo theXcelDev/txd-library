@@ -11,10 +11,10 @@ export type Booking = {
   id: string;
   collectionItem: CollectionItem;
   executionDate?: Date;
-  returnDate?: Date;
+  cancellationDate?: Date;
   expirationDate: Date;
   user: User;
-  status: 'overdue' | 'executed' | 'pending';
+  status: 'overdue' | 'executed' | 'pending' | 'cancelled';
 };
 
 export type CollectionItem = {
@@ -29,10 +29,11 @@ export type Loan = {
   id: string;
   collectionItem: CollectionItem;
   executionDate?: Date;
+  cancellationDate?: Date;
   returnDate?: Date;
   expirationDate: Date;
   user: User;
-  status: 'overdue' | 'finished' | 'ongoing';
+  status: 'overdue' | 'finished' | 'ongoing' | 'cancelled';
 };
 
 export type User = {

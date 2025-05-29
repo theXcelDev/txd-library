@@ -16,6 +16,10 @@ export const formatNumber = (value: number) => {
   });
 };
 
+export const formatTime = (date: Date) => {
+  return format(date, 'HH:mm', { locale: ptBR });
+};
+
 export const getDayOfMonth = (date: Date) => {
   return format(date, 'dd', { locale: ptBR });
 };

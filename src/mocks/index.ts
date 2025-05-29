@@ -197,6 +197,35 @@ export const loans: Loan[] = [
 
 export const bookings: Booking[] = [
   {
+    id: 'a8hf-0asg-7f1sgf-8asg-fa',
+    collectionItem: collectionItems.find(
+      (item) => item.id === 'a0s7-fd08-7sagf0-9ags-dl'
+    )!,
+    cancellationDate: new Date(2025, 4, 28, 13, 27), // '29/05/2025 13h27'
+    expirationDate: new Date(2025, 5, 5, 12), // '05/06/2025 12h00',
+    user: user,
+    status: 'cancelled'
+  },
+  {
+    id: 'a8hf-0asg-7f1sgf-8asg-fb',
+    collectionItem: collectionItems.find(
+      (item) => item.id === 'a0s7-fd08-7sagf0-9ags-da'
+    )!,
+    expirationDate: new Date(2025, 4, 29, 12), // '28/05/2025 12h00',
+    user: user,
+    status: 'overdue'
+  },
+  {
+    id: 'a8hf-0asg-7f1sgf-8asg-fc',
+    collectionItem: collectionItems.find(
+      (item) => item.id === 'a0s7-fd08-7sagf0-9ags-do'
+    )!,
+    executionDate: new Date(2025, 4, 28, 15, 19), // 28/05/2025 15h19
+    expirationDate: new Date(2025, 4, 29, 12), // '29/05/2025 12h00',
+    user: user,
+    status: 'executed'
+  },
+  {
     id: 'a8hf-0asg-7f1sgf-8asg-fd',
     collectionItem: collectionItems.find(
       (item) => item.id === 'a0s7-fd08-7sagf0-9ags-da'

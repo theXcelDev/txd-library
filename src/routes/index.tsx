@@ -2,6 +2,7 @@ import { createBrowserRouter } from 'react-router-dom';
 import MainLayout from '../layouts';
 import AuthorDetails from '../pages/AuthorDetails';
 import Authors from '../pages/Authors';
+import Bookings from '../pages/Bookings';
 import Collection from '../pages/Collection';
 import CollectionItem from '../pages/CollectionItem';
 import Home from '../pages/Home';
@@ -33,7 +34,7 @@ export const MainRouter = createBrowserRouter([
       },
       {
         path: 'bookings',
-        element: <h1>Agendamentos</h1>
+        element: <Bookings />
       },
       {
         path: 'loans',
