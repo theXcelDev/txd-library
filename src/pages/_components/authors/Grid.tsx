@@ -8,7 +8,7 @@ type Props = {
 
 export default function MyGrid({ authors }: Props) {
   return (
-    <Grid columns={3}>
+    <Grid>
       {authors.map((author) => (
         <GridCard key={author.id} author={author} />
       ))}
