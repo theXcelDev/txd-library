@@ -1,4 +1,4 @@
-import type { Booking } from '../../../types';
+import type { Booking } from 'txd-library/types';
 
 type Props = {
   booking: Booking;

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import Card from '../../../components/Card';
-import type { CollectionItem } from '../../../types';
+import Card from 'txd-library/components/Card';
+import type { CollectionItem } from 'txd-library/types';
 
 type Props = {
   item: CollectionItem;

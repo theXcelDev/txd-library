@@ -1,8 +1,8 @@
 import { useNavigate } from 'react-router-dom';
-import Button from '../../../components/Button';
-import { bookings, user } from '../../../mocks';
-import type { CollectionItem } from '../../../types';
-import { formatDate } from '../../../utils';
+import Button from 'txd-library/components/Button';
+import { bookings, user } from 'txd-library/mocks';
+import type { CollectionItem } from 'txd-library/types';
+import { formatDate } from 'txd-library/utils';
 
 type Props = {
   item: CollectionItem;

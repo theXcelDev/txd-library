@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
-import Button from '../../../components/Button';
-import type { Author } from '../../../types';
+import Button from 'txd-library/components/Button';
+import type { Author } from 'txd-library/types';
 
 type Props = {
   author: Author;

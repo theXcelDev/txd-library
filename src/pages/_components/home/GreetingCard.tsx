@@ -1,5 +1,5 @@
-import Card from '../../../components/Card';
-import { user } from '../../../mocks';
+import Card from 'txd-library/components/Card';
+import { user } from 'txd-library/mocks';
 
 export default function GreetingCard() {
   const { nickname, firstName } = user;

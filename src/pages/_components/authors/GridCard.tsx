@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import Card from '../../../components/Card';
-import type { Author } from '../../../types';
+import Card from 'txd-library/components/Card';
+import type { Author } from 'txd-library/types';
 
 type Props = {
   author: Author;

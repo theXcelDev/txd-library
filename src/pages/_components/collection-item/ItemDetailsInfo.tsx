@@ -1,4 +1,4 @@
-import type { CollectionItem } from '../../../types';
+import type { CollectionItem } from 'txd-library/types';
 
 type Props = {
   item: CollectionItem;

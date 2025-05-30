@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import Card from '../../../components/Card';
-import type { Booking } from '../../../types';
+import Card from 'txd-library/components/Card';
+import type { Booking } from 'txd-library/types';
 import GridCardBadge from './GridCardBadge';
 import GridCardDateInfo from './GridCardDateInfo';
 

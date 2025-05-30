@@ -1,4 +1,10 @@
-import type { Author, Booking, CollectionItem, Loan, User } from '../types';
+import type {
+  Author,
+  Booking,
+  CollectionItem,
+  Loan,
+  User
+} from 'txd-library/types';
 
 export const user: User = {
   id: 'asg0-7fsg-7df8gas-0d87-fg',

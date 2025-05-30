@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom';
-import Container from '../components/Container';
-import Header from '../components/Header';
-import { authors } from '../mocks';
+import Container from 'txd-library/components/Container';
+import Header from 'txd-library/components/Header';
+import { authors } from 'txd-library/mocks';
 import AuthorDetailsCard from './_components/author-details/AuthorDetailsCard';
 
 export default function AuthorDetails() {

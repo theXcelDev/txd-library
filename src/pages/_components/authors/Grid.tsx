@@ -1,5 +1,5 @@
-import Grid from '../../../components/Grid';
-import type { Author } from '../../../types';
+import Grid from 'txd-library/components/Grid';
+import type { Author } from 'txd-library/types';
 import GridCard from './GridCard';
 
 type Props = {

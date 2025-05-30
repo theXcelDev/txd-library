@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import Container from '../components/Container';
-import Header from '../components/Header';
-import Search from '../components/Search';
-import { bookings, user } from '../mocks';
+import Container from 'txd-library/components/Container';
+import Header from 'txd-library/components/Header';
+import Search from 'txd-library/components/Search';
+import { bookings, user } from 'txd-library/mocks';
 import Grid from './_components/bookings/Grid';
 
 export default function Bookings() {

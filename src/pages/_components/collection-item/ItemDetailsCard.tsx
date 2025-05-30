@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import Card from '../../../components/Card';
-import type { CollectionItem } from '../../../types';
+import Card from 'txd-library/components/Card';
+import type { CollectionItem } from 'txd-library/types';
 import ItemCustomerActions from './ItemCustomerActions';
 import ItemDetailsInfo from './ItemDetailsInfo';
 import ItemPreviewCard from './ItemPreviewCard';

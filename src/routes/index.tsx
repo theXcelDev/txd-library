@@ -1,11 +1,12 @@
 import { createBrowserRouter } from 'react-router-dom';
-import MainLayout from '../layouts';
-import AuthorDetails from '../pages/AuthorDetails';
-import Authors from '../pages/Authors';
-import Bookings from '../pages/Bookings';
-import Collection from '../pages/Collection';
-import CollectionItem from '../pages/CollectionItem';
-import Home from '../pages/Home';
+import MainLayout from 'txd-library/layouts';
+import AuthorDetails from 'txd-library/pages/AuthorDetails';
+import Authors from 'txd-library/pages/Authors';
+import BookingDetails from 'txd-library/pages/BookingDetails';
+import Bookings from 'txd-library/pages/Bookings';
+import Collection from 'txd-library/pages/Collection';
+import CollectionItem from 'txd-library/pages/CollectionItem';
+import Home from 'txd-library/pages/Home';
 
 export const MainRouter = createBrowserRouter([
   {
@@ -35,6 +36,10 @@ export const MainRouter = createBrowserRouter([
       {
         path: 'bookings',
         element: <Bookings />
+      },
+      {
+        path: 'bookings/:id',
+        element: <BookingDetails />
       },
       {
         path: 'loans',

@@ -1,5 +1,5 @@
-import type { Booking } from '../../../types';
-import { formatDate, formatTime } from '../../../utils';
+import type { Booking } from 'txd-library/types';
+import { formatDate, formatTime } from 'txd-library/utils';
 
 type Props = {
   booking: Booking;

@@ -1,5 +1,5 @@
-import Container from '../components/Container';
-import { bookings, loans } from '../mocks';
+import Container from 'txd-library/components/Container';
+import { bookings, loans } from 'txd-library/mocks';
 import DashboardCard from './_components/home/DashboardCard';
 import GreetingCard from './_components/home/GreetingCard';
 

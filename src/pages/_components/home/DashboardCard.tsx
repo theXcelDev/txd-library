@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import Card from '../../../components/Card';
-import type { Booking, Loan } from '../../../types';
+import Card from 'txd-library/components/Card';
+import type { Booking, Loan } from 'txd-library/types';
 import {
   capitalize,
   formatNumber,
@@ -9,7 +9,7 @@ import {
   getMinutes,
   getMonth,
   getYear
-} from '../../../utils';
+} from 'txd-library/utils';
 
 type CardType = 'loan' | 'booking';
 

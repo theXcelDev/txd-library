@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import Container from '../components/Container';
-import Header from '../components/Header';
-import Search from '../components/Search';
-import { authors } from '../mocks';
+import Container from 'txd-library/components/Container';
+import Header from 'txd-library/components/Header';
+import Search from 'txd-library/components/Search';
+import { authors } from 'txd-library/mocks';
 import Grid from './_components/authors/Grid';
 
 export default function Authors() {

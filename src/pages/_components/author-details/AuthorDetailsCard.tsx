@@ -1,5 +1,5 @@
-import Card from '../../../components/Card';
-import type { Author } from '../../../types';
+import Card from 'txd-library/components/Card';
+import type { Author } from 'txd-library/types';
 import AuthorDetailsInfo from './AuthorDetailsInfo';
 
 type Props = {
