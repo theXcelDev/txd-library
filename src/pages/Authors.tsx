@@ -1,9 +1,8 @@
 import { useState } from 'react';
-import Container from 'txd-library/components/Container';
-import Header from 'txd-library/components/Header';
 import Search from 'txd-library/components/Search';
 import { authors } from 'txd-library/mocks';
 import Grid from './_components/authors/Grid';
+import Page from './_components/common/Page';
 
 export default function Authors() {
   const [items, setItems] = useState(authors);
@@ -37,13 +36,12 @@ export default function Authors() {
   };
 
   return (
-    <Container>
-      <Header text="Autores" />
+    <Page title="Autores">
       <Search
         placeholder="Pesquise por nome, sobrenome, etc."
         onSearch={handleSearch}
       />
       <Grid authors={items} />
-    </Container>
+    </Page>
   );
 }

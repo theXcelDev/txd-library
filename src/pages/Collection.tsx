@@ -1,9 +1,8 @@
 import { useState } from 'react';
-import Container from 'txd-library/components/Container';
-import Header from 'txd-library/components/Header';
 import Search from 'txd-library/components/Search';
 import { collectionItems } from 'txd-library/mocks';
 import Grid from './_components/collection/Grid';
+import Page from './_components/common/Page';
 
 export default function Collection() {
   const [items, setItems] = useState(collectionItems);
@@ -50,13 +49,12 @@ export default function Collection() {
   };
 
   return (
-    <Container>
-      <Header text="Acervo" />
+    <Page title="Acervo">
       <Search
         placeholder="Pesquise por nome de obra, autor, sinopse, etc."
         onSearch={handleSearch}
       />
       <Grid collectionItems={items} />
-    </Container>
+    </Page>
   );
 }

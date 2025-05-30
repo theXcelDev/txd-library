@@ -1,8 +1,7 @@
 import { useParams } from 'react-router-dom';
-import Container from 'txd-library/components/Container';
-import Header from 'txd-library/components/Header';
 import { bookings } from 'txd-library/mocks';
 import BookingDetailsCard from './_components/booking-details/BookingDetailsCard';
+import Page from './_components/common/Page';
 
 export default function BookingDetails() {
   const { id } = useParams();
@@ -10,9 +9,8 @@ export default function BookingDetails() {
   const booking = bookings.find((item) => item.id === id)!;
 
   return (
-    <Container>
-      <Header text="Agendamentos" />
+    <Page title="Agendamentos">
       <BookingDetailsCard booking={booking} />
-    </Container>
+    </Page>
   );
 }

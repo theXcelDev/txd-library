@@ -1,9 +1,8 @@
 import { useState } from 'react';
-import Container from 'txd-library/components/Container';
-import Header from 'txd-library/components/Header';
 import Search from 'txd-library/components/Search';
 import { bookings, user } from 'txd-library/mocks';
 import Grid from './_components/bookings/Grid';
+import Page from './_components/common/Page';
 
 export default function Bookings() {
   const [items, setItems] = useState(bookings);
@@ -53,13 +52,12 @@ export default function Bookings() {
   };
 
   return (
-    <Container>
-      <Header text="Agendamentos" />
+    <Page title="Agendamentos">
       <Search
         placeholder="Pesquise por nome de obra, autor, sinopse, etc."
         onSearch={handleSearch}
       />
       <Grid bookings={items} />
-    </Container>
+    </Page>
   );
 }

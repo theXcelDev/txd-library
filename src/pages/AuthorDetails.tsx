@@ -1,8 +1,7 @@
 import { useParams } from 'react-router-dom';
-import Container from 'txd-library/components/Container';
-import Header from 'txd-library/components/Header';
 import { authors } from 'txd-library/mocks';
 import AuthorDetailsCard from './_components/author-details/AuthorDetailsCard';
+import Page from './_components/common/Page';
 
 export default function AuthorDetails() {
   const { id } = useParams();
@@ -10,9 +9,8 @@ export default function AuthorDetails() {
   const author = authors.find((item) => item.id === id)!;
 
   return (
-    <Container>
-      <Header text="Autores" />
+    <Page title="Autores">
       <AuthorDetailsCard author={author} />
-    </Container>
+    </Page>
   );
 }

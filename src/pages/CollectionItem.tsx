@@ -1,8 +1,7 @@
 import { useParams } from 'react-router-dom';
-import Container from 'txd-library/components/Container';
-import Header from 'txd-library/components/Header';
 import { collectionItems } from 'txd-library/mocks';
 import ItemDetailsCard from './_components/collection-item/ItemDetailsCard';
+import Page from './_components/common/Page';
 
 export default function CollectionItem() {
   const { id } = useParams();
@@ -10,9 +9,8 @@ export default function CollectionItem() {
   const collectionItem = collectionItems.find((item) => item.id === id)!;
 
   return (
-    <Container>
-      <Header text="Acervo" />
+    <Page title="Acervo">
       <ItemDetailsCard item={collectionItem} />
-    </Container>
+    </Page>
   );
 }
